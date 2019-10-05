@@ -106,5 +106,5 @@ encodings.xml
 out\
 .idea\
 artifacts\
-SimpleTwitter.iml
+*.iml
 
