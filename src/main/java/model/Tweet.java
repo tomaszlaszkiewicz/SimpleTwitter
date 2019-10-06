@@ -11,13 +11,14 @@ public class Tweet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private long id;
 
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "id_author")
     private User author;
 
-    @Column(name = "publishedAt")
+    @Column(name = "published_at")
     private Date publishedAt;
 
     @Column(name = "message")
